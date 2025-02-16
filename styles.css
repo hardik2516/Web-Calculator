@@ -1,0 +1,115 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            flex-direction: column;
+            transition: background 0.3s;
+        }
+        .dark-mode {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+        }
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #f39c12, #e74c3c);
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .calculator {
+            width: 320px;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+        .dark-mode .calculator {
+            background: #2c3e50;
+        }
+        input {
+            width: 100%;
+            height: 60px;
+            text-align: right;
+            font-size: 2em;
+            margin-bottom: 15px;
+            border: none;
+            outline: none;
+            padding-right: 10px;
+            background: #bdc3c7;
+            border-radius: 5px;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+        .dark-mode input {
+            background: #3b3b4f;
+            color: white;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        button {
+            height: 60px;
+            font-size: 1.5em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background: #3498db;
+            color: white;
+            transition: 0.3s;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+        }
+        button:hover {
+            background: #2980b9;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        .history {
+            margin-top: 20px;
+            max-height: 150px;
+            overflow-y: auto;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+            font-size: 0.9em;
+            color: #2c3e50;
+            transition: background 0.3s;
+        }
+        .dark-mode .history {
+            background: #3b3b4f;
+            color: white;
+        }
+        .dark-mode-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            background: #ffffff;
+            color: #333;
+            transition: 0.3s;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .dark-mode-toggle:hover {
+            background: #f0f0f0;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    
